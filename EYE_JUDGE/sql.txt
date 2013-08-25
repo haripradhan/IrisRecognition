@@ -1,0 +1,17 @@
+//creating the database and table for setting up mysql DB in xamplite..
+//copy and paste the following sql command and run it...
+
+CREATE DATABASE `eyejudge` ;
+
+CREATE TABLE `eyejudge`.`personinfo` (
+`ID` INT NOT NULL AUTO_INCREMENT  ,
+`FirstName` VARCHAR( 30 ) NOT NULL ,
+`LastName` VARCHAR( 30 ) NOT NULL ,
+`Gender` VARCHAR( 6 ) NOT NULL ,
+`IrisCode` VARCHAR( 60000 ) NOT NULL ,
+PRIMARY KEY ( `ID` )
+);
+
+
+//getting initial value for id=1000
+ALTER TABLE personinfo AUTO_INCREMENT=1000
